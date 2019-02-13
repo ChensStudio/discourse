@@ -6,6 +6,7 @@ class CreateReviewableScores < ActiveRecord::Migration[5.2]
       t.integer :reviewable_score_type, null: false
       t.integer :status, null: false
       t.float :score, null: false, default: 0
+      t.float :take_action_bonus, null: false, default: 0
       t.timestamps
     end
 
